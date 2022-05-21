@@ -1,6 +1,6 @@
 export CGO_ENABLED=0
 
-VERSION := $(shell git describe --tags --dirty --always)
+VERSION := $(shell git describe --tags --always)
 
 GOFLAGS := -ldflags "-X main.version=$(VERSION) -buildid=" -trimpath
 
